@@ -12,7 +12,7 @@ body {
 }
 
 .nav-item {
-    font-size: 20px;
+    font-size: 15px;
     border-bottom: 1px solid grey;
     float: left;
     padding-left: 10px;
@@ -59,4 +59,8 @@ a:hover {
     font-style: normal;
     border: 1px solid grey;
     margin: 0px;
+}
+
+.main {
+    padding-top: 10vh;
 }
