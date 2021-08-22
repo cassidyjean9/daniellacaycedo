@@ -43,8 +43,7 @@
             <div class="col-sm-3 col-md-2">
                 <a class="nav-item" href="cv.html">cv</a>
                  <a class="nav-item" href="drawings.html">drawings</a>
-                 <a class="nav-item" href="sculptures.html">sculptures</a>
-            </div>
+                 <a class="nav-item" hrefs="sculptures.html">sculptures</a>
             <div class="col-sm-3 col-md-2">
                  <a class="nav-item" href="multimedia.html">multimedia</a>
                  <a class="nav-item" href="writing.html">writing</a>
@@ -52,3 +51,55 @@
             </div>
         </div>
     </div>
+
+    <!-- to do: figure out best formatting-->
+    <div class="wrapper">
+        <div class="row">
+            <div class="column">
+             <a href="march25thpoems.html"><h1> March 25th Poems </h1><br>
+              <p>
+                1.
+                “There! In the pink hat.That’s our guy.” The twins looked up from their porcelain espresso cups at a car that had just pulled up. <br>
+                Two seats down, under the same linoleum ceiling <br>
+                the same cloud of listerine- scented air, A party of five didn’t talk about any of it....... <br>
+        </p>
+    </a>
+            </div>
+            <div class="column">
+              <img src="assets/writing/r2.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assets/writing/r3.pages" onclick="myFunction(this);">
+            </div>
+          </div>
+        
+          
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          
+            <!-- Expanded image -->
+            <img id="expandedImg" style="height:100vh">
+          
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+          </div>
+        </div>
+          <script>
+              function myFunction(imgs) {
+          // Get the expanded image
+          var expandImg = document.getElementById("expandedImg");
+          // Get the image text
+          var imgText = document.getElementById("imgtext");
+          // Use the same src in the expanded image as the image being clicked on from the grid
+          expandImg.src = imgs.src;
+          // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          imgText.innerHTML = imgs.alt;
+          // Show the container element (hidden with CSS)
+          expandImg.parentElement.style.display = "block";
+        }
+          </script>
+        
+          </body>
